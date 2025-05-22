@@ -1,255 +1,61 @@
-div {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
     background-color: rgb(240, 237, 237);
-}
+    font-family: Arial, sans-serif;
+  }
 
-.cuadro {
-    margin-top: 25px;
+  div {
+    background-color: rgb(240, 237, 237);
+  }
+
+  .cuadro, .logomenu, .opciones, .anuncio, .shop, .telefonos1,
+  .shopfrom, .productos, .topElectronics, .electronicsband,
+  .Daily, .comida, .nombres, .descripciones, .footer, .logos, .right {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
-
-    background-color: rgb(218, 218, 218)  ;                                                     
-
-    padding-left: 5%;
-}
-
-.logomenu {
+    padding: 1rem 5%;
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    background-color: white;
+  }
 
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.text {
-    padding-left: 5%;
-}   
-
-.location {
-    padding-left: 45%;
-}
-
-.logo {
-    padding-left: 20%;
-}
-
-.opciones {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.anuncio {
+  .anuncio {
     background-color: #1e2641;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 40px; 
+  }
 
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    padding-left: 5%;
-
-}
-
-.descripcion {
-    text-align: left;
-    margin-left: 0;
-}
-
-.shop {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.telefonos1 {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 15%;
-}
-
-.shopfrom {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.productos {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 15%;
-}
-
-.topElectronics {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.electronicsband {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 15%;
-}
-
-.Daily {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.comida {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.nombres {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-
-}
-
-.vegetales {
-    padding-left: 7%;
-}
-
-.frutas {
-    padding-left: 5%;
-}
-
-.fresa {
-    padding-left: 5%;
-}
-
-.mango {
-    padding-left: 6%;
-}
-
-.cereza {
-    padding-left: 6%;
-}
-
-.descripciones {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: white  ;
-
-    padding-left: 5%;
-}
-
-.des1 {
-    padding-left: 3%;
-}
-
-.des2 {
-    padding-left: 3%;
-}
-
-.des3 {
-    padding-left: 2%;
-}
-
-.des4 {
-    padding-left: 0.5%;
-}
-
-.des5 {
-    padding-left: 2%;
-}
-
-.footer {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background-color: #008ECC ;
-
-    padding-left: 5%;
-}
-
-.descrip {
-   padding-left: 15%;
-}
-
-.customer {
-    padding-left: 5%;
-}
-
-.logos {
+  .footer, .logos, .right {
     background-color: #008ECC;
+  }
+
+  .text, .location, .logo, .descripcion, .des1, .des2, .des3, .des4, .des5,
+  .descrip, .customer, .app, .vegetales, .frutas, .fresa, .mango, .cereza {
     padding-left: 5%;
-}
+  }
 
-.app {
-    padding-left: 2%;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-.right{ 
-    background-color: #008ECC;
-    padding-left: 30%;
+  @media (max-width: 768px) {
+    .cuadro, .logomenu, .opciones, .anuncio, .shop, .telefonos1,
+    .shopfrom, .productos, .topElectronics, .electronicsband,
+    .Daily, .comida, .nombres, .descripciones, .footer, .logos, .right {
+      justify-content: center;
+      text-align: center;
+    }
 
-}
+    .text, .location, .logo, .descripcion, .des1, .des2, .des3, .des4, .des5,
+    .descrip, .customer, .app, .vegetales, .frutas, .fresa, .mango, .cereza {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
