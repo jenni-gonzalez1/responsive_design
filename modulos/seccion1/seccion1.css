@@ -1,0 +1,9 @@
+.seccion1 {
+    background-color: #1e2641;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
